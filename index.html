@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<title>Satja Milenusic - Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top right, #4a2b3e, #1e121a);
+    color: #fff;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+body > * { max-width: 900px; margin: auto; }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(to right, #ffb6c1, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    margin-bottom: 50px;
+}
+
+nav p1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffb6c1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 15px; }
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 24px;
+    background: rgba(255, 182, 193, 0.1);
+    border: 1px solid rgba(255, 182, 193, 0.3);
+    border-radius: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav a:hover {
+    background: #ffb6c1;
+    color: #1e121a;
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+}
+
+.intro-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border-left: 5px solid #ffb6c1;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.column {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.column:hover {
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-10px);
+}
+
+h2 { color: #ffb6c1; margin-bottom: 15px; font-size: 1.4rem; }
+li { margin-bottom: 10px; list-style-type: "🌸"; padding-right: 10px; }
+
+q { font-style: italic; color: #ffdae0; }
+</style>
+</head>
+<body>
+
+<h1>Satja Mileusnić - Digitalni Multimedij</h1>
+
+<nav>
+    <p1>Moj portfolio:</p1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=n8JdTHXjKX8">Najdraža pjesma</a></li>
+        <li><a href="2stranica.html">Moje fotke</a></li>
+        <li><a href="MileusnicSatja_CV.pdf">Moj CV</a></li>
+    </ul>
+</nav>
+
+<div class="intro-card">
+    <p style="font-size: 1.3rem; font-weight: 600;">Bok, ja sam Satja.</p>
+    <p>Studentica sam na Grafičkom fakultetu u Zagrebu.</p>
+    <br>
+    <p><i>Omnia in mente nascuntur. Quod times in animo tuo vivit. Mundus qualis est, a mente pendet. Nihil est verius quam quod mens facit.</i> <q>It's all in your head.</q></p>
+</div>
+
+<div class="row">
+    <div class="column">
+        <h2>Najdraži izvođači</h2>
+        <ul>
+            <li>Dave</li>
+            <li>Sade</li>
+            <li>Travis Scott</li>
+            <li>Central Cee</li>
+        </ul>
+    </div>
+
+    <div class="column">
+        <h2>Najdraže pjesme</h2>
+        <ol style="list-style-type: decimal; padding-left: 0px;">
+            <li>Raindance</li>
+            <li>CRG</li>
+            <li>No ordinary love</li>
+            <li>Nije OK!</li>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
